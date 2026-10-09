@@ -29,15 +29,22 @@ Unemployment – Regional unemployment rate
 # 🛠️ Tools & Skills
 
 - SQL (MySQL Workbench) → Data cleaning, querying, and analysis
-- Excel & Power BI → Visualizations and dashboards
-- Data Analytics → Sales trend analysis, seasonality, volatility checks
-  
-# 📈 Sample Insights
+- SQL techniques → CTEs, aggregate functions, `CASE WHEN` logic, `CROSS JOIN` benchmarking, date functions
+- Data Analytics → Sales trend analysis, seasonality, volatility checks, store benchmarking
 
-- Store 20 had the highest total sales across all periods.
-- Sales during holiday weeks (e.g., Christmas, Thanksgiving) were consistently higher than non-holidays.
-- Certain stores showed large sales fluctuations, highlighting operational differences.
+# 📈 Key Insights
+
+The dataset covers **45 stores** and **6,435 weekly sales records** (February 2010 to October 2012), totaling **$6.74B** in sales.
+
+- **Store 20** had the highest total sales across the period (**$301.4M**), followed closely by Store 4 ($299.5M) and Store 14 ($289.0M).
+- **Holiday weeks averaged 7.8% higher sales** than non-holiday weeks, but the lift came almost entirely from one holiday:
+  - **Thanksgiving week: +41%** above a normal week
+  - **Super Bowl week: +4%**
+  - **Labor Day week: about even**
+  - **The flagged Christmas week: 8% lower**, because the flagged week falls at the very end of December, after the pre-Christmas shopping rush
+- **Store 14** had the most volatile weekly sales (highest standard deviation), followed by Stores 10 and 20, so the top-selling stores also tend to be the least predictable.
 
 # 🚀 Next Steps
 
-Extend analysis with predictive modeling (linear regression).
+- Build a Power BI or Excel dashboard on top of these queries
+- Extend the analysis with predictive modeling (linear regression) using temperature, fuel price, CPI, and unemployment
